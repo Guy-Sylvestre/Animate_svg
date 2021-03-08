@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* background: red; */
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(laptod.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    width: 200px;
+    color: #fff;
+    margin: 5% auto;
+}
+
+#icon {
+    width: 200px;
+    margin: 10% auto;
+    display: block;
+    padding: 15px;
+    border: 3px solid #fff;
+    border-radius: 30%;
+    position: relative;
+}
+
+.face {
+    color: aqua;
+    fill-opacity: 0;
+    stroke: #fff;
+    stroke-width: 3px;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 2000;
+    animation: face 12s ease-in-out;
+    z-index: 1;
+}
+
+@keyframes face {
+    0% {
+        stroke-dashoffset: 2000;
+    }
+    50% {
+        stroke-dashoffset: 2000;
+    }
+    100% {
+        stroke-dasharray: 0;
+    }
+}
